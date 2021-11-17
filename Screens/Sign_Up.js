@@ -17,15 +17,13 @@ export default function Sign_Up(params) {
       >
         <Image
           style={{
-            transform: [{ rotate: "45deg" }],
-            borderRadius: 20,
-            marginBottom: 60,
+            //transform: [{ rotate: "45deg" }],
+            borderRadius: 10,
+            marginBottom: 10,
             width: 200,
             height: 200,
           }}
-          source={{
-            uri: "https://image.freepik.com/free-photo/slim-blithesome-woman-posing-with-bicycle-indoor-full-length-shot-curly-female-model-purple-pants_197531-20542.jpg",
-          }}
+          source={require("../Images/blue-logo.png")}
         />
         <Text style={{ fontSize: 20, color: "grey" }}>Kindly sign up to</Text>
         <Text style={{ fontSize: 30, fontWeight: "bold" }}>ShopIt</Text>
@@ -92,7 +90,7 @@ export default function Sign_Up(params) {
             alignItems: "center",
             borderRadius: 10,
             flexDirection: "row",
-            backgroundColor: "#9900CC",
+            backgroundColor: "#000099",
           }}
         >
           <AntDesign name="apple1" size={24} color="white" />
@@ -112,7 +110,7 @@ export default function Sign_Up(params) {
             alignItems: "center",
             borderRadius: 10,
             flexDirection: "row",
-            backgroundColor: "#9900CC",
+            backgroundColor: "#000099",
           }}
         >
           {/* <AntDesign name="google" size={24} color="white" /> */}
@@ -131,15 +129,15 @@ export default function Sign_Up(params) {
             alignItems: "center",
             borderRadius: 10,
             flexDirection: "row",
-            borderColor: "#9900CC",
+            borderColor: "#000099",
             borderWidth: 2,
             backgroundColor: "white",
           }}
         >
-          <AntDesign name="google" size={18} color="#9900CC" />
-          <Text style={{ paddingLeft: 10, color: "#9900CC" }}>Sign Up with Google</Text>
+          <AntDesign name="google" size={18} color="#000099" />
+          <Text style={{ paddingLeft: 10, color: "#000099" }}>Sign Up with Google</Text>
         </TouchableOpacity>
-        <Text style={{ textAlign: "center", paddingTop: 20, color: "grey" }}>Already have an account?<Text onPress={()=> {navigation.navigate("Login");}} style={{ paddingLeft: 10, color: "#9900CC" , fontWeight: "bold"}}>LOGIN</Text></Text>
+        <Text style={{ textAlign: "center", paddingTop: 20, color: "grey" }}>Already have an account?<Text onPress={()=> {navigation.navigate("Login");}} style={{ paddingLeft: 10, color: "#000099" , fontWeight: "bold"}}>LOGIN</Text></Text>
       </View>
     );
   }
