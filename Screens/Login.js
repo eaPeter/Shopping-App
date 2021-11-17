@@ -98,7 +98,7 @@ export default function Login(params) {
           <MaterialIcons name="navigate-next" size={24} color="white" />
         </TouchableOpacity>
 
-        <TouchableOpacity
+            <TouchableOpacity
           onPress={() => {
             navigation.navigate("Home");
           }}
@@ -113,12 +113,14 @@ export default function Login(params) {
             borderColor: "#000099",
             borderWidth: 2,
             backgroundColor: "white",
+            justifyContent: "flex-end",
           }}
         >
           <AntDesign name="google" size={18} color="#000099" />
           <Text style={{ paddingLeft: 10, color: "#000099" }}>Login with Google</Text>
         </TouchableOpacity>
         <Text style={{ textAlign: "center", paddingTop: 20, color: "grey" }}>Don't have an account yet?<Text onPress={()=> {navigation.navigate("Sign_Up");}} style={{ paddingLeft: 10, color: "#000099" , fontWeight: "bold"}}>SIGN UP</Text></Text>
+        
       </View>
     );
   }

@@ -3,7 +3,7 @@ import { View, Text, Image, TextInput, TouchableOpacity, FlatList } from "react-
 import { Ionicons, FontAwesome, AntDesign, MaterialIcons, } from "@expo/vector-icons";
 import { render } from "react-dom";
 
-export default function Home(params) {
+export default function Product_Detail(params) {
     const navigation = params.navigation;
       return (
         <View style ={{backgroundColor: "white", flex: 1}}>
@@ -56,10 +56,10 @@ export default function Home(params) {
                 <Text style = {{color: "#black", fontWeight: "600", fontSize: 20, flexDirection: "row", paddingBottom: 10,}}>Colours</Text>
                 <View style={{flexDirection: "row",}}>
                     <View style={{paddingRight: 5}}>
-                        <View style={{height: 30, width: 30, borderRadius: 30, color: "red", backgroundColor: "red"}}/>
+                        <View style={{height: 30, width: 30, borderRadius: 30, color: "red", backgroundColor: "red", borderColor: "black", borderWidth: 1}}/>
                     </View>
                     <View style={{paddingLeft: 5, paddingRight: 5}}>
-                        <View style={{height: 30, width: 30, borderRadius: 30, color: "red", backgroundColor: "#000099", padding: 15,}}/>
+                        <View style={{height: 30, width: 30, borderRadius: 30, color: "red", backgroundColor: "#000099", padding: 15, borderColor: "black", borderWidth: 1}}/>
                     </View>
                     <View style={{paddingLeft: 5, paddingRight: 5}}>
                         <View style={{height: 30, width: 30, borderRadius: 30, color: "red", backgroundColor: "white", padding: 15, borderColor: "black", borderWidth: 1}}/>
