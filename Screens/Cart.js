@@ -26,7 +26,7 @@ export default function Cart(params){
             </View>
             </View>
 
-            <Text style={{fontWeight: "bold", fontSize: 22, padding:  15}}>My Chart</Text>
+            <Text style={{fontWeight: "bold", fontSize: 22, padding:  15}}>My Cart</Text>
 
         <View style={{ paddingVertical: 5, paddingHorizontal: 15}}>
         <TouchableOpacity
@@ -119,6 +119,28 @@ export default function Cart(params){
 
         </TouchableOpacity>
 
+        <Text style={{fontWeight: "bold", fontSize: 20, paddingTop: 10, fontWeight: "bold", }}>Order Info</Text>
+        <View style={{fontSize: 20, paddingVertical: 5, flexDirection: "row", alignItems: "center", justifyContent: "space-between",}}>
+            <Text >Discount:</Text>
+        
+            <Text>GHC 1,000.00</Text>
+            
+        </View>
+
+        <View style={{fontSize: 20, paddingVertical: 5, flexDirection: "row", alignItems: "center", justifyContent: "space-between",}}>
+            <Text >Sub-Total:</Text>
+        
+            <Text>GHC 10,000.00</Text>
+            
+        </View>
+
+        <View style={{fontSize: 20, paddingVertical: 5, flexDirection: "row", alignItems: "center", justifyContent: "space-between",}}>
+            <Text >Total:</Text>
+        
+            <Text>GHC 9,000.00</Text>
+            
+        </View>
+
         <TouchableOpacity
           onPress={() => {
             navigation.navigate("Home");
@@ -139,6 +161,10 @@ export default function Cart(params){
           <Text style={{ paddingLeft: 10, color: "white", fontWeight: "bold" }}>PAY NOW</Text>
           <MaterialIcons name="navigate-next" size={24} color="white" />
         </TouchableOpacity>
+
+        
+        
+
         </View>
         </View>
     )
